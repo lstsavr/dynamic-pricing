@@ -1,0 +1,14 @@
+[
+  {
+    "product_id": "P001",
+    "competitor_price": 90.0
+  },
+  {
+    "product_id": "P002",
+    "competitor_price": 195.0
+  },
+  {
+    "product_id": "P003",
+    "competitor_price": 48.0
+  }
+]

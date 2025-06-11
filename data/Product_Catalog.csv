@@ -1,0 +1,4 @@
+product_id,base_price,inventory,sales_last_30_days,average_rating,category
+P001,100.0,15,120,4.5,Electronics
+P002,200.0,50,40,4.0,Apparel
+P003,50.0,5,10,3.8,Home
