@@ -42,37 +42,37 @@
 	•	Node.js & npm
 	•	Docker (optional but recommended)
 
-Local Setup
+	Local Setup
 
-Step 1: Clone the repo
-git clone https://github.com/Istsavr/dynamic-pricing.git
-cd dynamic-pricing
+	Step 1: Clone the repo
+	git clone https://github.com/Istsavr/dynamic-pricing.git
+	cd dynamic-pricing
 
-Step 2: Backend setup
-pip install -r requirements.txt
+	Step 2: Backend setup
+	pip install -r requirements.txt
 
-Step 3: Frontend build
-cd pricing-dashboard
-npm install
-npm run build
+	Step 3: Frontend build
+	cd pricing-dashboard
+	npm install
+	npm run build
 
-Step 4: Move frontend build to backend
-This creates: static/index.html + static/statics/js/...
-cp -r build/* ../static/
+	Step 4: Move frontend build to backend
+	This creates: static/index.html + static/statics/js/...
+	cp -r build/* ../static/
 
-Step 5: Run Flask
-cd ..
-python app.py
+	Step 5: Run Flask
+	cd ..
+	python app.py
 
-Visit: http://localhost:5000
+	Visit: http://localhost:5000
 
-Docker Run
+	Docker Run
 
 docker build -t dynamic-pricing-app .
 docker run -p 5000:5000 dynamic-pricing-app
 
 
-⸻
+
 
 3.API Documentation
 
@@ -91,7 +91,7 @@ GET /products
 ]
 
 
-⸻
+
 
 GET /adjust-prices
 	•	Description: Returns dynamically adjusted prices.
