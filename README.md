@@ -44,23 +44,23 @@
 
 Local Setup
 
-# Step 1: Clone the repo
+Step 1: Clone the repo
 git clone https://github.com/Istsavr/dynamic-pricing.git
 cd dynamic-pricing
 
-# Step 2: Backend setup
+Step 2: Backend setup
 pip install -r requirements.txt
 
-# Step 3: Frontend build
+Step 3: Frontend build
 cd pricing-dashboard
 npm install
 npm run build
 
-# Step 4: Move frontend build to backend
-# This creates: static/index.html + static/statics/js/...
+Step 4: Move frontend build to backend
+This creates: static/index.html + static/statics/js/...
 cp -r build/* ../static/
 
-# Step 5: Run Flask
+Step 5: Run Flask
 cd ..
 python app.py
 
@@ -74,7 +74,7 @@ docker run -p 5000:5000 dynamic-pricing-app
 
 ⸻
 
-API Documentation
+3.API Documentation
 
 GET /products
 	•	Description: Returns all product info.
