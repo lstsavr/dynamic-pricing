@@ -42,34 +42,40 @@
 	•	Node.js & npm
 	•	Docker (optional but recommended)
 
-	Local Setup
+Option 1: Local Setup (for development)
 
-	Step 1: Clone the repo
+Use this method if you want to inspect or modify the backend/frontend code before running.
+
+ Requirements
+
+- Python 3.9+
+- Node.js & npm
+
+
+
+```bash
+	# 1. Clone the repository
 	git clone https://github.com/Istsavr/dynamic-pricing.git
 	cd dynamic-pricing
 
-	Step 2: Backend setup
+	# 2. Backend setup
 	pip install -r requirements.txt
 
-	Step 3: Frontend build
+	# 3. Frontend build
 	cd pricing-dashboard
 	npm install
 	npm run build
 
-	Step 4: Move frontend build to backend
-	This creates: static/index.html + static/statics/js/...
+	# 4. Move frontend build to backend
 	cp -r build/* ../static/
-
-	Step 5: Run Flask
 	cd ..
+
+	# 5. Run Flask server
 	python app.py
 
-	Visit: http://localhost:5000
 
-	Docker Run
-
-docker build -t dynamic-pricing-app .
-docker run -p 5000:5000 dynamic-pricing-app
+	docker build -t dynamic-pricing-app .
+	docker run -p 5000:5000 dynamic-pricing-app
 
 
 
