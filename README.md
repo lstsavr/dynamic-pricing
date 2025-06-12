@@ -1,6 +1,6 @@
 # Dynamic Pricing System
 
-
+(run the test code can see the test cases)
 
 ## 1. System Architecture & Design Choices
 
