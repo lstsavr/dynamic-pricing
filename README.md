@@ -51,8 +51,6 @@ Use this method if you want to inspect or modify the backend/frontend code befor
 - Python 3.9+
 - Node.js & npm
 
-
-
 ```bash
 	# 1. Clone the repository
 	git clone https://github.com/Istsavr/dynamic-pricing.git
@@ -79,8 +77,21 @@ Use this method if you want to inspect or modify the backend/frontend code befor
 
 
 
+Docker Steps
+bash
 
-# 3.API Documentation
+	1. Clone the repository
+	git clone https://github.com/Istsavr/dynamic-pricing.git
+cd dynamic-pricing
+
+	2. Build Docker image
+docker build -t dynamic-pricing-app .
+
+	3. Run the container
+	docker run -p 5000:5000 dynamic-pricing-app
+
+
+3.API Documentation
 
 GET /products
 	•	Description: Returns all product info.
