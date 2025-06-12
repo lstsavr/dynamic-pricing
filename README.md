@@ -1,4 +1,4 @@
-1. System Architecture & Design Choices
+# 1. System Architecture & Design Choices
 
 1. Frontend (Client Interface)
 	•	Framework:react JS
@@ -36,7 +36,7 @@
 
 
 
-2. Setup & Run Instructions
+# 2. Setup & Run Instructions
  Requirements
 	•	Python 3.9+
 	•	Node.js & npm
@@ -74,7 +74,7 @@ docker run -p 5000:5000 dynamic-pricing-app
 
 
 
-3.API Documentation
+# 3.API Documentation
 
 GET /products
 	•	Description: Returns all product info.
@@ -115,7 +115,7 @@ GET /adjust-prices
 
 
 
-4. ML Pipeline
+# 4. ML Pipeline
 	•	Input Features:
 	•	inventory
 	•	rating
